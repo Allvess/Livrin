@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Livros</title>
+</head>
+<body>
+    <h1>Seu livro foi cadastrado!!!</h1>
+    <div th:each="livro : ${livros}">
+        <div>
+            <p>Nome: <span th:text="${livro.nome}"></span></p>
+            <p>Autor: <span th:text="${livro.autor}"></span></p><hr>
+        </div>
+    </div>
+    <hr>
+    <p><a href="/livros">Ver livros</a></p>
+</body>
+</html>

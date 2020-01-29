@@ -7,7 +7,17 @@
     <title>Welcom</title>
 </head>
 <body>
-    <h1>Cadastre seus livros aqui!</h1>
-    <a href="cadastrar"><button>Iniciar</button></a>
+    <form method="POST" action="/cadastrar">
+        <h1>Cadastre seu livro aqui!!!</h1>
+        <label> Nome: </label>
+        <input type="text" name="nome">
+
+        <label> autor:</label>
+        <input type="text" name="autor">
+
+        <label> Por que quero ler este livro? </label>
+        <textarea name="descricao" id="" cols="30" rows="10"></textarea>
+        <button>Cadastrar</button>
+    </form>
 </body>
 </html>
